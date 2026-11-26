@@ -16,8 +16,23 @@
 
 </style>
 
+<style id="eq3c-christmas-2026">
+  .eq3c-christmas-link[hidden]{display:none!important}
+  .eq3c-christmas-link{position:relative;z-index:10;max-width:1390px;margin:9px auto 13px;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;border:3px solid #fff3d2;border-radius:22px;background:linear-gradient(115deg,#124e58,#1a6869 56%,#7f3549);box-shadow:0 7px 0 #c5ddd7,0 13px 22px #12283e28;color:#fff;font-family:Nunito,system-ui,sans-serif}
+  .eq3c-christmas-link strong{display:block;color:#ffebaf;font-size:clamp(1.05rem,2vw,1.42rem)}
+  .eq3c-christmas-link small{display:block;font-weight:750;color:#eefafa;line-height:1.55}
+  .eq3c-christmas-link .eq3c-christmas-intro{display:flex;align-items:center;gap:13px}
+  .eq3c-christmas-link .eq3c-christmas-icon{font-size:44px;filter:drop-shadow(0 5px 1px #0f3939)}
+  .eq3c-christmas-link a{background:#ffdf92;color:#224453;text-decoration:none;padding:11px 17px;border-radius:14px;font-weight:950;box-shadow:0 4px 0 #d9a95e;white-space:nowrap}
+  .eq3c-christmas-link a:hover{background:#fff0bd}
+  @media(max-width:700px){.eq3c-christmas-link{margin:8px 11px 12px}.eq3c-christmas-link a{width:100%;text-align:center}}
+ </style>
 </head>
 <body>
+<aside id="eq3cChristmasBanner" class="eq3c-christmas-link" aria-label="English Quest juleportal" hidden>
+   <div class="eq3c-christmas-intro"><span class="eq3c-christmas-icon" aria-hidden="true">🎄🦉</span><div><strong>Christmas Quest er åbnet!</strong><small>3 nye jule-escape rooms med 5 missioner i hver · julespil · julehistorier · julebadges</small></div></div>
+   <a href="christmas.html">🎁 Åbn juleportalen</a>
+ </aside>
   <a class="skip-link" href="#main">Gå til indhold</a>
   <div class="app-shell">
     <header class="topbar">
@@ -166,5 +181,8 @@ function init(){drawTopics();drawCountries();updateDashboard();document.querySel
 init();
 
 </script>
+<script id="eq3c-christmas-activation">
+ (function(){var now=new Date(),m=now.getMonth(),d=now.getDate();var x=document.getElementById('eq3cChristmasBanner');if(x&&((m===10&&d>=25)||(m===11&&d<=29)))x.hidden=false;})();
+ </script>
 </body>
 </html>
